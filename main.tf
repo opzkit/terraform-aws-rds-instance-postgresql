@@ -33,7 +33,9 @@ resource "aws_security_group" "allow_postgres" {
 
 resource "aws_db_instance" "default" {
   instance_class              = var.instance_type
+  engine                      = "postgres"
   engine_version              = var.postgresql_version
+  allocated_storage           = var.allocated_storage
   max_allocated_storage       = 60
   skip_final_snapshot         = var.skip_final_snapshot
   identifier                  = var.identifier
