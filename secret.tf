@@ -12,7 +12,7 @@ locals {
     DB_USERNAME  = var.master_username
     DB_PASSWORD  = local.password
     DB_NAME      = var.db_name
-    DB_PORT      = aws_db_instance.default.port
+    DB_PORT      = tostring(aws_db_instance.default.port)
     DB_HOST      = aws_db_instance.default.address
     POSTGRES_URL = "postgres://${var.master_username}:${local.password}@${aws_db_instance.default.address}:${aws_db_instance.default.port}/${var.db_name}?sslmode=disable"
 
