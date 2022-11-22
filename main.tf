@@ -31,25 +31,52 @@ resource "aws_security_group" "allow_postgres" {
   }
 }
 
+resource "aws_db_parameter_group" "default" {
+  family = "postgres13"
+  name   = "${var.identifier}-parameters"
+
+  dynamic "parameter" {
+    for_each = merge(var.parameters, local.default_parameters)
+    content {
+      name         = parameter.key
+      value        = parameter.value
+      apply_method = "pending-reboot"
+    }
+  }
+}
+
 resource "aws_db_instance" "default" {
-  instance_class              = var.instance_type
-  engine                      = "postgres"
-  engine_version              = var.postgresql_version
-  allocated_storage           = var.allocated_storage
-  max_allocated_storage       = 60
-  skip_final_snapshot         = var.skip_final_snapshot
-  identifier                  = var.identifier
-  db_name                     = var.db_name
-  username                    = var.master_username
-  password                    = local.password
-  monitoring_interval         = var.enhanced_monitoring ? 60 : 0
-  monitoring_role_arn         = var.enhanced_monitoring ? aws_iam_role.rds_enhanced_monitoring[0].arn : null
-  maintenance_window          = "mon:02:00-mon:03:30"
-  backup_window               = "03:30-05:00"
-  backup_retention_period     = 14
-  allow_major_version_upgrade = true
-  apply_immediately           = var.apply_immediately
-  db_subnet_group_name        = aws_db_subnet_group.default.name
-  storage_encrypted           = var.storage_encrypted
-  vpc_security_group_ids      = [aws_security_group.allow_postgres.id]
+  instance_class                        = var.instance_type
+  engine                                = "postgres"
+  engine_version                        = var.postgresql_version
+  allocated_storage                     = var.allocated_storage
+  max_allocated_storage                 = 60
+  skip_final_snapshot                   = var.skip_final_snapshot
+  identifier                            = var.identifier
+  db_name                               = var.db_name
+  username                              = var.master_username
+  password                              = local.password
+  monitoring_interval                   = var.enhanced_monitoring ? 60 : 0
+  monitoring_role_arn                   = var.enhanced_monitoring ? aws_iam_role.rds_enhanced_monitoring[0].arn : null
+  maintenance_window                    = "mon:02:00-mon:03:30"
+  backup_window                         = "03:30-05:00"
+  backup_retention_period               = 14
+  allow_major_version_upgrade           = true
+  apply_immediately                     = var.apply_immediately
+  db_subnet_group_name                  = aws_db_subnet_group.default.name
+  storage_encrypted                     = var.storage_encrypted
+  vpc_security_group_ids                = [aws_security_group.allow_postgres.id]
+  parameter_group_name                  = aws_db_parameter_group.default.name
+  kms_key_id                            = var.kms_key_arn
+  performance_insights_kms_key_id       = var.kms_key_arn == "" ? null : var.kms_key_arn
+  performance_insights_enabled          = true
+  performance_insights_retention_period = var.performance_insights_retention_period
+}
+
+locals {
+  default_parameters = {
+    "pg_stat_statements.save"           = 1
+    "pg_stat_statements.track"          = "TOP"
+    "pg_stat_statements.track_planning" = 1
+  }
 }
