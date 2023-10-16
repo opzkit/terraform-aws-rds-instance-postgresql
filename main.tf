@@ -71,6 +71,7 @@ resource "aws_db_instance" "default" {
   performance_insights_kms_key_id       = var.kms_key_arn == "" ? null : var.kms_key_arn
   performance_insights_enabled          = true
   performance_insights_retention_period = var.performance_insights_retention_period
+  ca_cert_identifier                    = var.ca_cert_identifier
 }
 
 locals {
