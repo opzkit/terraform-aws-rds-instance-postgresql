@@ -32,8 +32,8 @@ resource "aws_security_group" "allow_postgres" {
 }
 
 resource "aws_db_parameter_group" "default" {
-  family = "postgres13"
-  name   = "${var.identifier}-parameters"
+  family = "postgres${regex("^[0-9]+", var.postgresql_version)}"
+  name   = "${var.identifier}-parameters-${regex("^[0-9]+", var.postgresql_version)}"
 
   dynamic "parameter" {
     for_each = merge(var.parameters, local.default_parameters)
@@ -42,6 +42,10 @@ resource "aws_db_parameter_group" "default" {
       value        = parameter.value
       apply_method = "pending-reboot"
     }
+  }
+
+  lifecycle {
+    create_before_destroy = true
   }
 }
 
