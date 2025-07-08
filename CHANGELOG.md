@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.4.0...v0.4.1) (2025-07-08)
+
+
+### Miscellaneous Chores
+
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.5 ([#43](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/43)) ([31907ff](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/31907ff6876069159c5873127957362416be11e4))
+
 ## [0.4.0](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.3.0...v0.4.0) (2025-06-19)
 
 
