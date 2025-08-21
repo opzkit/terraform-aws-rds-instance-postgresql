@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.4.1](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.4.0...v0.4.1) (2025-08-21)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v4.3.0 ([#48](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/48)) ([350381c](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/350381c447e3486bdd97c50eaa41e479698c4a3c))
+* **deps:** update actions/checkout action to v5 ([#49](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/49)) ([418ad1e](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/418ad1eac739c1eab29c1c56469ba1aee3f4ba23))
+* **deps:** update actions/checkout digest to 08eba0b ([#47](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/47)) ([182a407](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/182a407cda01c44b514f4cb9174c15e93946891f))
+* **deps:** update googleapis/release-please-action digest to c2a5a2b ([#52](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/52)) ([9d23334](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/9d233342ebb44341aff7e0839f6bae6e92cb8da5))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.100.0 ([#45](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/45)) ([7d11899](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/7d11899322b817b3b94cfb3d72c7d6b9e790c7ef))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.5 ([#43](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/43)) ([31907ff](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/31907ff6876069159c5873127957362416be11e4))
+* **deps:** update pre-commit hook pre-commit/pre-commit-hooks to v6 ([#46](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/46)) ([2c91e28](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/2c91e2835de0473f6e728283ce41fdcd0391cf14))
+* **deps:** update terraform-linters/setup-tflint action to v5 ([#50](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/50)) ([4a2fdfc](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/4a2fdfcda41d8c7fe5e3bbe50195cfe2023f362f))
+
+
+### Continuous Integration
+
+* add GitHub Actions workflow for release automation ([#51](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/51)) ([cf56512](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/cf56512210fbe805c157641ebd0540dbe6734c43))
+
 ## [0.4.0](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.3.0...v0.4.0) (2025-06-19)
 
 
