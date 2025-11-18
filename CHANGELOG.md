@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.1](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.5.0...v0.5.1) (2025-11-18)
+
+
+### Bug Fixes
+
+* update ssl_mode parameter to sslmode for consistency ([#96](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/96)) ([373cc1a](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/373cc1adab88dafa5816da1ba276b11eb8216b68))
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v5.0.1 ([#94](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/94)) ([4fb47b8](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/4fb47b8b14412691fa3fbabdf17b8fc5d7db1901))
+* **deps:** update actions/checkout digest to 93cb6ef ([#93](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/93)) ([9ad4e95](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/9ad4e95a6e1655d813c019abec90dabb3160ad8e))
+
 ## [0.5.0](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.4.0...v0.5.0) (2025-11-17)
 
 
