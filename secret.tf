@@ -14,8 +14,7 @@ locals {
     DB_NAME      = var.db_name
     DB_PORT      = tostring(aws_db_instance.default.port)
     DB_HOST      = aws_db_instance.default.address
-    POSTGRES_URL = "postgres://${var.master_username}:${local.password}@${aws_db_instance.default.address}:${aws_db_instance.default.port}/${var.db_name}?ssl_mode=${var.ssl_mode}"
-
+    POSTGRES_URL = "postgres://${var.master_username}:${local.password}@${aws_db_instance.default.address}:${aws_db_instance.default.port}/${var.db_name}?sslmode=${var.ssl_mode}"
   }
   password = random_password.password.result
 }
