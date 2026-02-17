@@ -1,5 +1,41 @@
 # Changelog
 
+## [0.5.2](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.5.1...v0.5.2) (2026-02-17)
+
+
+### Bug Fixes
+
+* use floor version constraints for provider versions ([#123](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/123)) ([438c0e2](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/438c0e2357daf4521797c990ce738b1644d8e4f2))
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v6 ([#98](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/98)) ([64432be](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/64432be859431b9823aaf27be5f5b1792f9525f7))
+* **deps:** update actions/checkout action to v6.0.1 ([#106](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/106)) ([82cccf7](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/82cccf75901c4ac2da99ba8d9713ee8430b26dc0))
+* **deps:** update actions/checkout action to v6.0.2 ([#117](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/117)) ([7c24dd5](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/7c24dd5ab800258ef03c7fef6c07842086e9fa61))
+* **deps:** update actions/checkout digest to 8e8c483 ([#105](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/105)) ([ee3c229](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/ee3c2298a8a4f4160cb6525f803da424a4549662))
+* **deps:** update actions/checkout digest to de0fac2 ([#121](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/121)) ([2160e6e](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/2160e6e86af2236593eac2f715768307dd01be84))
+* **deps:** update actions/create-github-app-token digest to 29824e6 ([#107](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/107)) ([32a3be9](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/32a3be9269312b57a505b207cf46730cc077d5ce))
+* **deps:** update actions/create-github-app-token digest to 7e473ef ([#100](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/100)) ([d8807fd](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/d8807fd9fdca266210592956d124f8d3ea0b0cd1))
+* **deps:** update actions/setup-python action to v6.1.0 ([#103](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/103)) ([3372c83](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/3372c830611d51c6a16d231be27347120b72088d))
+* **deps:** update actions/setup-python action to v6.2.0 ([#116](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/116)) ([a79d2fb](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/a79d2fb036c4ed38393e17e0db76cf40e47c64f3))
+* **deps:** update pre-commit hook alessandrojcm/commitlint-pre-commit-hook to v9.24.0 ([#113](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/113)) ([83806b3](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/83806b39b88b30d41a0801f3ad8987ad72f06a6d))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.104.0 ([#97](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/97)) ([f77dc6b](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/f77dc6b2927707168c655c87d45dc8c9ce9fe4bb))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.104.1 ([#110](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/110)) ([70bfa6e](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/70bfa6ecd6dbf1b47956545c7b6f025b7180829e))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.105.0 ([#111](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/111)) ([35b212b](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/35b212b7c4cef625ef987ec1e8ed6cb2f390bb89))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v41.173.1 ([#101](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/101)) ([9ad7faa](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/9ad7faa92d81f3983a2f124c754c38bbd89533f1))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42 ([#102](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/102)) ([44a72e0](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/44a72e01b47bc78602b811daa56acf67ae949046))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.27.0 ([#104](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/104)) ([b6b536b](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/b6b536ba689b217c1715f1409572490698a0a6c4))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.52.8 ([#108](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/108)) ([db49bc7](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/db49bc7bad0e75de4017b6eb7e02c488116fd741))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.66.11 ([#109](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/109)) ([75734b8](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/75734b85e10986746aefadc2e24e9075270fd6ba))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.78.2 ([#112](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/112)) ([9826fd1](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/9826fd1340a6dfc6a1badbdc670918e615e3b8a1))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.84.0 ([#115](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/115)) ([1e27c67](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/1e27c67232b09cf5f52f8976495f5928cfb2bd8d))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.95.1 ([#119](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/119)) ([c9f770d](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/c9f770d842200b3e9f7facdfa9ef638acc52068d))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43 ([#120](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/120)) ([1da4f20](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/1da4f201d00e76fe0a3daf715f9da235c5f14f65))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.15.1 ([#122](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/122)) ([4080e03](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/4080e03a95cbe5f59cc38bc17f586c0bd9d82150))
+* **deps:** update terraform random to v3.8.0 ([#114](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/114)) ([bea80fa](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/bea80faa65a75622961ebbb9e87ceac3c4ac2768))
+* **deps:** update terraform random to v3.8.1 ([#118](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/118)) ([75e3fec](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/75e3fec707d4555c8d5ce269af9fd8bf55b9952d))
+
 ## [0.5.1](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.5.0...v0.5.1) (2025-11-18)
 
 
