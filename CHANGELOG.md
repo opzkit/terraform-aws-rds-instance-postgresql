@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.5.3](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.5.2...v0.5.3) (2026-03-03)
+
+
+### Bug Fixes
+
+* update backup_retention_period to use variable ([#127](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/127)) ([1e9dbad](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/1e9dbadf1a8d56333f4d0a0afc1436350e19984f))
+
+
+### Miscellaneous Chores
+
+* **deps:** update hashicorp/setup-terraform action to v4 ([#124](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/124)) ([bc44f8b](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/bc44f8bf13f455db85f8a1cfddef35625c9d3e93))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.46.6 ([#126](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/126)) ([83bb8f9](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/83bb8f91c8c017adc275438f97236c691c2b5775))
+
 ## [0.5.2](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.5.1...v0.5.2) (2026-02-17)
 
 
