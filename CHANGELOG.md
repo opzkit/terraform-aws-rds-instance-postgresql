@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.4](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.5.3...v0.5.4) (2026-03-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/create-github-app-token action to v3 ([#130](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/130)) ([05a17e7](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/05a17e78d035221b25007b2ab7d13d6707c6ad8f))
+* **deps:** update actions/create-github-app-token digest to fee1f7d ([#128](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/128)) ([765e1df](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/765e1df1e7ae6ebbf0e309626f1b150401b665d6))
+* **deps:** update terraform-linters/setup-tflint action to v6.2.2 ([#131](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/issues/131)) ([901a7e0](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/commit/901a7e00f4ff7fa69e507d8b6610aa7af942536a))
+
 ## [0.5.3](https://github.com/opzkit/terraform-aws-rds-instance-postgresql/compare/v0.5.2...v0.5.3) (2026-03-03)
 
 
